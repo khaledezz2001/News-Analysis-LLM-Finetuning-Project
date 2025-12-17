@@ -1,0 +1,19 @@
+# config.yaml
+data_dir: "/gdrive/MyDrive/LLM/llm-finetuning"
+base_model_id: "Qwen/Qwen2.5-1.5B-Instruct"
+train_sample_size: 2700
+
+# OpenAI settings
+openai_model: "gpt-4o-mini"
+openai_input_price: 0.150  # per 1M tokens
+openai_output_price: 0.600  # per 1M tokens
+
+# Training settings
+lora_rank: 64
+learning_rate: 1.0e-4
+num_epochs: 3
+batch_size: 1
+gradient_accumulation: 4
+
+# Languages for translation
+translation_languages: ["English", "French"]
